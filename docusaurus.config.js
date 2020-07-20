@@ -1,0 +1,48 @@
+module.exports = {
+  title: 'Base de conocimiento',
+  tagline: 'Se acabaron los ficheros de texto y los marcadores',
+  url: 'https://kb.leank.es',
+  baseUrl: '/',
+  favicon: 'img/favicon.ico',
+  organizationName: 'jrvdaw', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
+  themeConfig: {
+    navbar: {
+      title: 'Base de conocimiento',
+      logo: {
+        alt: 'My Site Logo',
+        src: 'img/logo.svg',
+      },
+
+    },
+    footer: {
+      style: 'dark',
+      copyright: `Copyright © ${new Date().getFullYear()} jrvdaw's knowledgebase. Docusaurus ftw.`,
+    },
+    // algolia: {
+    //   apiKey: 'aec7c1acadcc0a081463afe7d4404f36',
+    //   indexName: 'prod_kb',
+    //   // appId: 'app-id', // Optional, if you run the DocSearch crawler on your own
+    //   // algoliaOptions: {}, // Optional, if provided by Algolia
+    // },
+  },
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          // It is recommended to set document id as docs home page (`docs/` path).
+          routeBasePath: '/',
+          homePageId: 'linux',
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/jrvdaw/docusaurus/edit/master/website/',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+  ],
+};
