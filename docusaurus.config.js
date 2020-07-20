@@ -20,7 +20,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} jrvdaw's knowledgebase. Docusaurus ftw.`,
     },
     // algolia: {
-    //   apiKey: 'aec7c1acadcc0a081463afe7d4404f36',
+    //   apiKey: 'ALGOLIA_APIKEY',
     //   indexName: 'prod_kb',
     //   // appId: 'app-id', // Optional, if you run the DocSearch crawler on your own
     //   // algoliaOptions: {}, // Optional, if provided by Algolia
@@ -37,7 +37,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/jrvdaw/docusaurus/edit/master/website/',
+            'https://github.com/TheLeank/knowledgebase/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
