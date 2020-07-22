@@ -20,5 +20,5 @@ xdebug.remote_autostart=1
 
 Por último, actívalo con:
 ```
-phpenmod xdebug
+phpenmod xdebug && service apache2 reload
 ```
