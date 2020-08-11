@@ -2,6 +2,16 @@
 title: PHP
 ---
 
+## Crear log con fopen
+
+La ruta es relativa al $_SERVER['DOCUMENT_ROOT']
+
+```php
+$fp = fopen("./logs/my.log", "a+") or die("Unable to open resource.");
+fwrite($fp, $string . "\n");
+fclose($fp);
+```
+
 ## Extensiones
 
 ### Xdebug
