@@ -32,4 +32,3 @@ Por último, actívalo con:
 ```
 phpenmod xdebug && service apache2 reload
 ```
-Whatever
