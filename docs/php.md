@@ -21,9 +21,19 @@ La siguiente configuración permite que no tengamos que espeficiar la dirección
 
 ```none title="/etc/php/7.0/mods-available/xdebug.ini"
 [xdebug]
-zend_extension=//usr/lib/php/20151012/xdebug.so
 xdebug.remote_enable=1
 xdebug.remote_autostart=1
+xdebug.remote_port=9090
+; Use XDEBUG_PROFILE as POST/GET/COOKIE var
+xdebug.profiler_enable_trigger=1
+xdebug.profiler_output_dir=/var/www/html/xdebug
+; Use XDEBUG_TRACE as POST/GET/COOKIE var
+xdebug.trace_enable_trigger=1
+xdebug.trace_output_dir=/var/www/html/xdebug
+xdebug.collect_params=1
+xdebug.collect_return=1
+; 0 = human readable, 1 = computer readable, 2 = html
+xdebug.trace_format=0
 ```
 
 Por último, actívalo con:
