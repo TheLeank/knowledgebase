@@ -10,6 +10,16 @@ fwrite($fp, $string . "\n");
 fclose($fp);
 ```
 
+## Devolver contenido como JSON
+
+Útil para depurar en Firefox, que incorpora un «visor» para JSON.
+
+```php
+header('Content-type:application/json;charset=utf-8');
+echo json_encode($data);
+die();
+```
+
 ## Extensiones
 
 ### Xdebug
