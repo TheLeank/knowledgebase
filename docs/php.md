@@ -51,3 +51,10 @@ Por último, actívalo con:
 ```
 phpenmod xdebug && service apache2 reload
 ```
+
+o, si usas php-fpm, con:
+```
+phpenmod xdebug && service php7.3-fpm reload
+```
+
+
