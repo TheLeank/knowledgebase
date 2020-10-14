@@ -5,7 +5,7 @@ title: PHP
 ## Crear log con fopen
 
 ```php
-$fp = fopen($_SERVER['DOCUMENT_ROOT'] . "logs/my.log", "a+") or die("Unable to open resource.");
+$fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/logs/my.log", "a+") or die("Unable to open resource.");
 fwrite($fp, $string . "\n");
 fclose($fp);
 ```
