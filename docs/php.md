@@ -4,6 +4,8 @@ title: PHP
 
 ## Crear log con fopen
 
+Crea y establece permisos al directorio `logs` en la raíz de documento en caso de que no exista. El fichero se creará automáticamente.
+
 ```php
 $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/logs/my.log", "a+") or die("Unable to open resource.");
 fwrite($fp, $string . "\n");
@@ -22,7 +24,7 @@ die();
 
 ## Extensiones
 
-### Xdebug
+### Xdebug 2
 
 Esta extensión permite el step debugging, así como una mejor impresión del comando var_dump, entre otros. Para conocer qué versión necesitas puedes usar el [asistente](https://xdebug.org/wizard). También puedes instalarlo vía pecl install xdebug.
 
@@ -57,4 +59,6 @@ o, si usas php-fpm, con:
 phpenmod xdebug && service php7.3-fpm reload
 ```
 
+### Xdebug 3
 
+TODO
