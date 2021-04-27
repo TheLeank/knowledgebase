@@ -7,9 +7,13 @@ It's built with [Docusaurus 2](https://v2.docusaurus.io/), and it's so easy to u
 ## How to build the static site
 
 docker run -it node /bin/bash
+
 git clone https://github.com/TheLeank/knowledgebase.git
+
 cd knowledgebase
+
 yarn install
+
 yarn build
 
 Done! The static websitehas been generatedon the ./build folder.
