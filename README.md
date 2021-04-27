@@ -16,4 +16,4 @@ yarn install
 
 yarn build
 
-Done! The static websitehas been generatedon the ./build folder.
+scp -r build/* [DEST]
