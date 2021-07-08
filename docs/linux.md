@@ -138,6 +138,6 @@ Host example.net
 Al intentar conectar a una sesión existente, la pantalla se muestra en negro y un segundo después, se cierra:
 
 ```none
-    echo xfce4-session > $HOME/.xsession
-    chmod +x .xsession
+echo xfce4-session > $HOME/.xsession
+chmod +x .xsession
 ```
