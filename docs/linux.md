@@ -130,3 +130,14 @@ Host example.net
     RemoteCommand cd / && exec bash --login
     RequestTTY yes
 ```
+
+## XRDP
+
+### Conectar a una sesión existente
+
+Al intentar conectar a una sesión existente, la pantalla se muestra en negro y un segundo después, se cierra:
+
+```none
+    echo xfce4-session > $HOME/.xsession
+    chmod +x .xsession
+```
