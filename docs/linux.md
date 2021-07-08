@@ -141,3 +141,4 @@ Al intentar conectar a una sesión existente, la pantalla se muestra en negro y 
 echo xfce4-session > $HOME/.xsession
 chmod +x .xsession
 ```
+[Issue en github](https://github.com/neutrinolabs/xrdp/issues/1412)
