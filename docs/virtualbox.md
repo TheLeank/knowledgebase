@@ -1,0 +1,23 @@
+---
+title: VirtualBox
+---
+
+## Instalar Guest Additions
+
+```
+apt update && apt upgrade
+apt install build-essential module-assistant
+m-a prepare
+sh /media/cdrom/VBoxLinuxAdditions.run
+```
+
+En caso de que la imagen de disco no se monte:
+
+```
+sudo mkdir --p /media/cdrom
+sudo mount -t auto /dev/cdrom /media/cdrom/
+cd /media/cdrom/
+sudo sh VBoxLinuxAdditions.run
+```
+
+[Otro método](https://unix.stackexchange.com/questions/286934/how-to-install-virtualbox-guest-additions-in-a-debian-virtual-machine)
