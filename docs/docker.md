@@ -18,7 +18,7 @@ Si reinicias el servicio sin más, el contenedor se detendrá. Para evitarlo, us
 kill -USR2 1
 ```
 
-[Fuente](https://stackoverflow.com/questions/37806188/how-to-restart-php-fpm-inside-a-docker-container
+[Fuente](https://stackoverflow.com/questions/37806188/how-to-restart-php-fpm-inside-a-docker-container)
 
 ## Crear imagen sin necesidad de servicio
 
