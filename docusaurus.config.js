@@ -11,7 +11,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'theleank', // Usually your GitHub org/user name.
-  projectName: 'knowledgebase', // Usually your repo name.
+  projectName: 'knowledgebase', // Usually your repo name..
   themeConfig: {
     navbar: {
       title: 'Base de conocimiento',
