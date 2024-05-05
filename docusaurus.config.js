@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Base de conocimiento',
   tagline: 'Se acabaron los ficheros de texto y los marcadores',
-  url: 'https://docs.leank.es',
+  url: 'https://docs.rovin.es',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
